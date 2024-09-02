@@ -3,7 +3,11 @@ SELECT
     c.category_name AS category,
     s.subcategory_name AS subcategory,
     p.product_name AS product,
-    SUM(sales.quantity_sold * sales.unit_price) AS total_sales,
+    --account total_sales for potential discounts
+    SUM(CASE 
+            WHEN sales.discount IS NULL THEN sales.quantity_sold * sales.unit_price
+            ELSE sales.quantity_sold * (sales.unit_price - sales.discount)
+        END) AS total_sales,
     COUNT(DISTINCT sales.order_id) AS total_orders,
     SUM(sales.quantity_sold) AS total_units_sold,
     AVG(sales.unit_price) AS average_selling_price,
@@ -30,3 +34,4 @@ ORDER BY
     category,
     subcategory,
     product;
+
