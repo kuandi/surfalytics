@@ -23,6 +23,9 @@ JOIN
     categories c ON s.category_id = c.category_id
 JOIN
     regions r ON sales.region_id = r.region_id
+WHERE
+    r.region_name = 'North America' -- Filter by specific region
+    AND sales.sale_date BETWEEN '2023-01-01' AND '2023-12-31' -- Filter by date range
 GROUP BY
     r.region_name,
     c.category_name,
@@ -34,4 +37,3 @@ ORDER BY
     category,
     subcategory,
     product;
-
