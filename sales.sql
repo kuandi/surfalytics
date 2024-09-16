@@ -8,9 +8,10 @@ SELECT
             WHEN sales.discount IS NULL THEN sales.quantity_sold * sales.unit_price
             ELSE sales.quantity_sold * (sales.unit_price - sales.discount)
         END) AS total_sales,
-    COUNT(DISTINCT sales.order_id) AS total_orders,
+    COUNT(sales.order_id) AS total_orders,
     SUM(sales.quantity_sold) AS total_units_sold,
     AVG(sales.unit_price) AS average_selling_price,
+    MAX(sales.unit_price) AS max_selling_price,
     MAX(sales.sale_date) AS last_sale_date,
     MIN(sales.sale_date) AS first_sale_date
 FROM
