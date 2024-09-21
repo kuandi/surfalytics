@@ -1,6 +1,4 @@
-# 🏄‍♂️surfalytics Sales Analytics Repository
-
-# Welcome to the Data Analyst Team!
+# Welcome to the 🏄‍♂️Data Analyst Team!
 
 Welcome to our team! This guide will help you get started with your role as a Data Analyst. Below you'll find essential information, resources, and tools to ensure a smooth onboarding process.
 
