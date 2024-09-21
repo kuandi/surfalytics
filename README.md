@@ -1,48 +1,98 @@
 # 🏄‍♂️surfalytics Sales Analytics Repository
 
-Overview
---------
+# Welcome to the Data Analyst Team!
 
-Welcome to the Sales Analytics Repository! This repository contains SQL scripts designed to provide in-depth insights into various aspects of sales, shipping, and partner-related data. The SQL scripts are designed to be modular, enabling quick access to key metrics and allowing for further customization based on specific business needs.
+Welcome to our team! This guide will help you get started with your role as a Data Analyst. Below you'll find essential information, resources, and tools to ensure a smooth onboarding process.
 
-### Contents
+## Table of Contents
 
-1.  **sales.sql**: Generates detailed sales metrics and aggregated data across different dimensions such as region, category, subcategory, and product name.
-2.  **orders_shipping.sql**: Provides insights into the shipping status of orders, including delivery times and shipping delays.
-3.  **partners_orders.sql**: Focuses on orders placed through partners, calculating partner commissions and providing details about partner performance.
+1. [Introduction](#introduction)
+2. [Tools and Software](#tools-and-software)
+3. [Data Sources](#data-sources)
+4. [Best Practices](#best-practices)
+5. [Useful Commands](#useful-commands)
+6. [Contacts](#contacts)
 
-* * * * *
+---
 
-Getting Started
----------------
+## Introduction
 
-1.  **Prerequisites**: Ensure that you have access to a database with relevant tables such as `orders`, `order_items`, `customers`, `products`, `partners`, and `shipping`.
-2.  **Database Setup**: Import or connect the SQL scripts to your database environment.
-3.  **Running the Scripts**: Execute each SQL script in your SQL editor or database client to generate the respective reports.
+As a Data Analyst, your role involves interpreting data, analyzing results, and providing insights to help make informed business decisions. You'll work closely with various departments to understand their data needs and deliver actionable reports.
 
-* * * * *
+## Tools and Software
 
-Contributing
-------------
+Here are the primary tools and software you'll be using:
 
-To maintain the integrity and consistency of this repository, please follow these guidelines when contributing:
+| Tool          | Purpose                                | License     |
+|---------------|----------------------------------------|-------------|
+| **Python**    | Data analysis and scripting            | Open Source |
+| **SQL Server**| Database management and querying       | Commercial  |
+| **Tableau**   | Data visualization and dashboarding    | Commercial  |
+| **GitHub**    | Version control and collaboration      | Free/Paid   |
 
-### General Rules
+### Installing Python
 
--   **Use Lowercase Snake Case for Naming**: Follow the lowercase snake_case convention for all SQL object names, including tables, columns, and variables.
--   **Comment Your Code**: Include clear and concise comments for complex SQL logic. Comments should describe what the code does and why certain decisions were made.
--   **Ensure Code Readability**: Format SQL queries for readability, using proper indentation and line breaks. This helps others understand and maintain the code.
--   **Optimize Queries**: Before submitting a query, ensure it is optimized for performance, avoiding unnecessary subqueries or joins.
+To install Python, follow these steps:
 
-### Submitting Pull Requests
+1. Visit the [official Python website](https://www.python.org/downloads/).
+2. Download the latest stable release.
+3. Run the installer and follow the on-screen instructions.
 
--   **Branch Naming**: Use descriptive branch names that reflect the changes being made, such as `feature/add-new-metric` or `bugfix/fix-date-format`.
--   **Commit Messages**: Write clear and meaningful commit messages that explain what changes were made and why.
--   **Review Process**: Assign a reviewer and provide context for the changes in the PR description. Address any feedback promptly.
+```bash
+# Verify Python installation
+python --version
+```
 
-* * * * *
+## Data Sources
 
-Contact
--------
+We work with various data sources, including:
 
-For any questions or support, please contact the repository maintainers at @surfalytics.com
+- **Internal Databases**: Access via SQL Server.
+- **External APIs**: For third-party data integration.
+- **CSV Files**: Regular data exports from different departments.
+
+## Best Practices
+
+- **Data Cleaning**: Always clean and preprocess data before analysis.
+- **Documentation**: Document your code and processes for future reference.
+- **Version Control**: Use GitHub for version controlling your scripts and reports.
+- **Regular Backups**: Ensure data is backed up regularly to prevent loss.
+
+### Coding Standards
+
+- Use clear and descriptive variable names.
+- Comment your code to explain complex logic.
+- Follow PEP 8 guidelines for Python code.
+
+## Useful Commands
+
+Here are some essential SQL commands you'll frequently use:
+
+| Command    | Description                                                  |
+|------------|--------------------------------------------------------------|
+| `SELECT`   | Retrieve data from a database table.                         |
+| `WHERE`    | Filter records based on conditions.                          |
+| `JOIN`     | Combine rows from two or more tables.                         |
+| `GROUP BY` | Group rows that have the same values.                         |
+| `ORDER BY` | Sort the result-set in ascending or descending order.         |
+
+### Example: Selecting Data
+
+```sql
+SELECT employee_id, first_name, last_name, department
+FROM employees
+WHERE department = 'Sales'
+ORDER BY last_name ASC;
+```
+
+## Contacts
+
+If you have any questions or need assistance, feel free to reach out to:
+
+- **Team Lead**: Dmitry - [hello@world.com](mailto:hello@world.com)
+- **IT Support**: support@world.com
+- **HR Department**: hr@world.com
+
+---
+
+*We're excited to have you on board! Let's achieve great things together.*
